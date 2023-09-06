@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="my-profile.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar" id="myNavbar">
+        <div style="padding: 25px;">
+        <a style="margin-right: 35px;" href="#">Joy Ravelo Tarigan</a>
+            <a style="margin-right: 20px;" href="#">Sertifikat</a>
+            <a href="#skills">Keterampilan</a>
+            <a href="javascript:void(0);"  class="icon-bar" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="profile">
+            <div class="profile-image">
+                <img src="./assets/image.jpg" alt="Joy Ravelo Tarigan">
+            </div>
+
+            <div class="profile-data">
+                <p style="font-weight: bold;font-size: 3rem;">Joy Ravelo Tarigan, S.Kom</p>
+                <p>Front End Developer, Network Engineer</p>
+
+                <div class="profile-contact">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/joy-ravelo/" target="_blank" rel="noopener noreferrer"><img src="./assets/linkedin.png" class="contact-icon" alt="Linkedin"></a>&nbsp</li>
+                        <li><a href="https://www.instagram.com/jravelo_trg/" target="_blank" rel="noopener noreferrer"><img src="./assets/instagram.png" class="contact-icon" alt="Instagram"></a>&nbsp</li>
+                        <li><a href="whatsapp://send?text=Hello&phone=+6281269837931" target="_blank" rel="noopener noreferrer"><img src="./assets/whatsapp.png" class="contact-icon" alt="Kontak"></a>&nbsp</li>
+                        <li><a href="mailto:joyravelo06@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./assets/email.png" class="contact-icon" alt="Email"></a>&nbsp</li>
+                    </ul>
+                    
+                </div>
+                <br/>
+                <div class="profile-about">
+                    <p>Saya adalah pribadi yang bertanggung jawab, mampu bekerja dalam tim, mudah beradaptasi dengan lingkungan sekitar serta menyukai hal-hal baru, terutama di bidang teknologi. Dengan kemampuan dan keterampilan ini, saya sudah memiliki pengetahuan yang berkualifikasi dalam proses membangun produk secara interaktif, kreatif, dan inovatif. Saya sangat termotivasi untuk terus belajar dan meningkatkan keahlian dan keterampilan saya.</p>
+                </div>
+                <br/>
+                <div class="profile-btn">
+                    <a href="#myProject"><button>Proyek</button></a>
+                    <a target="_blank" href="mailto:joyravelo06@gmail.com"><button>Kontak Saya</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article class="main-content">
+        <p id="skills" style="font-weight: bold;font-size: 2.5rem;">Keterampilan</p>
+
+        <section class="skills-list">
+            <ul>
+                <li>
+                    <img class="skills-image" src="./assets/front-end.jpg" alt="Front End Developer">
+                    <br><br>
+                    <button class="fe-btn">Front End Developer</button>
+
+                    <div class="custom-model-fe">
+                        <div class="custom-model-inner">        
+                        <div class="close-btn">×</div>
+                            <div class="custom-model-wrap">
+                                <div class="pop-up-content-wrap">
+                                    <div style="text-align: center;">
+                                        <br>
+                                        <p style="font-size: medium;font-weight: bold;">Front End Developer</p>
+                                        <br>
+                                        <center><hr style="width: 80%;"></center>
+                                    </div>
+                                    
+                                    <div class="skill-info">
+                                        <center>
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>CSS Bootstrap</li>
+                                                <li>JavaSvript</li>
+                                                <li>React Js</li>
+                                                <li>React Native</li>
+                                            </ul>
+                                        </center>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>  
+                        </div>  
+                        <div class="bg-overlay"></div>
+                    </div> 
+                </li>
+
+                <li>
+                    <img class="skills-image" src="./assets/network.jpg" alt="Network Engineer">
+                    <br><br>
+                    <button class="ne-btn">Network Engineer</button>
+
+                    <div class="custom-model-ne">
+                        <div class="custom-model-inner">        
+                        <div class="close-btn">×</div>
+                            <div class="custom-model-wrap">
+                                <div class="pop-up-content-wrap">
+                                    <div style="text-align: center;">
+                                        <br>
+                                        <p style="font-size: medium;font-weight: bold;">Network Engineer</p>
+                                        <br>
+                                        <center><hr style="width: 80%;"></center>
+                                    </div>
+                                    
+                                    <div class="skill-info">
+                                        <center>
+                                            <ul>
+                                                <li>Konfigurasi & Konsep Jaringan</li>
+                                                <li>IP Address & Subnetting</li>
+                                                <li>Switching & Routing</li>
+                                                <li>Protokol TCP/IP</li>
+                                                <li>Software Define Network</li>
+                                            </ul>
+                                        </center>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>  
+                        </div>  
+                        <div class="bg-overlay"></div>
+                    </div> 
+                </li>
+
+                <li>
+                    <img class="skills-image" src="./assets/user-interface.jpg" alt="UI Designer">
+                    <br><br>
+                    <button class="ui-btn">UI Design</button>
+                    
+                    <div class="custom-model-ui">
+                        <div class="custom-model-inner">        
+                        <div class="close-btn">×</div>
+                            <div class="custom-model-wrap">
+                                <div class="pop-up-content-wrap">
+                                    <div style="text-align: center;">
+                                        <br>
+                                        <p style="font-size: medium;font-weight: bold;">UI Designer</p>
+                                        <br>
+                                        <center><hr style="width: 80%;"></center>
+                                    </div>
+                                    
+                                    <div class="skill-info">
+                                        <center>
+                                            <ul>
+                                                <li>Figma</li>
+                                                <li>UI Interface</li>
+                                            </ul>
+                                        </center>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>  
+                        </div>  
+                        <div class="bg-overlay"></div>
+                    </div> 
+                </li>
+
+            </ul>
+        </section>
+
+        <section class="experience">
+            <p style="font-weight: bold;font-size: 2.5rem;padding-top: 25px;color: azure;">Pengalaman</p>
+            
+            <div class="experience-detail">
+                <div style="margin-bottom: 3rem;" class="experience-info">
+                    <table>
+                        <tr>
+                            <td><img src="./assets/map.png" class="icon" alt="Lokasi Magang"></td>
+                            <td style="width: 88%;"><h3>Diskominfo Kota Bandar Lampung</h3></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/ux.png" class="icon" alt="Lokasi Magang"></td>
+                            <td><b>Front End Developer</b></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/meticulous.png" class="icon" alt=""></td>
+                            <td>Membangun Desain dan Tampilan Aplikasi Presensi dan Penjadwalan Liputan Menggunakan Figma dan React Native.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 10px;"><img src="./assets/chain.png" class="icon" alt=""></td>
+                            <td style="padding-top: 10px;"><a target="_blank" style="color: red;" href="https://github.com/Sinagafrinaldo/Proyek-KP">Magang - Diskominfo Kota Bandar Lampung</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <article class="project" id="myProject">
+        <p style="font-weight: bold;font-size: 2.5rem;padding-top: 25px;">Proyek</p>
+        
+        <div class="project-list">
+            <div class="child" id="project-detail">   
+                <table>
+                    <tr>
+                        <td><img src="./assets/folded-ribbon.png" class="icon" alt="Lokasi Magang"></td>
+                        <td style="width: 88%;"><h3>IMPLEMENTASI MEKANISME TRANSISI IPV6 DENGAN METODE 6TO4 DAN TEREDO PADA LAYANAN VIDEO CONFERENCE</h3></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/ux.png" class="icon" alt="Lokasi Magang"></td>
+                        <td><b>Computer Network</b></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/meticulous.png" class="icon" alt=""></td>
+                        <td>
+                            <div class="content desc-project">
+                                Membangun server layanan video conference menggunakan Ubuntu Server. Implementasi mekanisme transisi 6to4 pada layanan <i>video conference</i>. Implementasi mekanisme transisi Teredo pada layanan <i>video conference</i>.
+                            </div>
+
+                            <div class="show-more">
+                                <a>Show more</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 10px;"><img src="./assets/chain.png" class="icon" alt=""></td>
+                        <!-- <td style="padding-top: 10px;"><a target="_blank" style="color: aqua;" href="https://google.com">https://google.com</a></td> -->
+                    </tr>
+                </table>
+            </div>
+
+            <div class="child" id="project-detail">   
+                <table>
+                    <tr>
+                        <td><img src="./assets/folded-ribbon.png" class="icon" alt="Lokasi Magang"></td>
+                        <td style="width: 88%;"><h3>Membangun Website Informasi Harga Jual Mobil KIA</h3></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/ux.png" class="icon" alt="Lokasi Magang"></td>
+                        <td><b>Front End Developer</b></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/meticulous.png" class="icon" alt=""></td>
+                        <td>
+                            <div class="content desc-project">
+                                Redesign template web menggunakan HTML, CSS Bootstrap, dan JavaScript. Merancang desain gambar pada situs web KIA menggunakan Canva.
+                            </div>
+                            
+                            <div class="show-more">
+                                <a>Show more</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 10px;"><img src="./assets/chain.png" class="icon" alt=""></td>
+                        <td style="padding-top: 10px;"><a target="_blank" style="color: aqua;" href="https://github.com/joyrav09/Template-Web-Informasi-Penjualan-Mobil"> Freelance - Web Informasi Harga Jual Mobil</a></td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="child" id="project-detail">   
+                <table>
+                    <tr>
+                        <td><img src="./assets/folded-ribbon.png" class="icon" alt="Lokasi Magang"></td>
+                        <td style="width: 88%;"><h3>Sistem Informasi Inventory dan Pencatatan Pembayaran Berbasis Web dengan Metode Scrum</h3></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/ux.png" class="icon" alt="Lokasi Magang"></td>
+                        <td><b>Project Manager</b></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/meticulous.png" class="icon" alt=""></td>
+                        <td>
+                            <div class="content desc-project">
+                                Memulai sebuah proyek seperti memeriksa kelayakan, mengembangkan anggaran, tim, dan sumber daya. Melakukan perencanaan seperti menetapkan tujuan, menentukan peran, dan menjadwalkan tugas berdasarkan kebutuhan klien. Memantau dan mengendalikan aktivitas untuk melihat kemajuan pekerjaan proyek. Mengidentifikasi dan mengelola risiko untuk memastikan proyek dapat selesai tepat waktu. Mengidentifikasi perubahan yang diperlukan seiring berjalannya pekerjaan proyek. Menyiapkan laporan berkala kepada klien.
+                            </div>
+
+                            <div class="show-more">
+                                <a>Show more</a>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 10px;"><img src="./assets/chain.png" class="icon" alt=""></td>
+                        <td style="padding-top: 10px;"><a target="_blank" style="color: aqua;" href="https://github.com/Sinagafrinaldo/Elka">Tugas Kuliah - Sistem Informasi Inventory dan Pencatatan Pembayaran</a></td>
+                    </tr>
+                </table>
+            </div>
+          
+            <div class="child" id="project-detail">   
+                <table>
+                    <tr>
+                        <td><img src="./assets/folded-ribbon.png" class="icon" alt="Lokasi Magang"></td>
+                        <td style="width: 88%;"><h3>Sistem Peringatan Dini Banjir</h3></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/ux.png" class="icon" alt="Lokasi Magang"></td>
+                        <td><b>Internet Of Things</b></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/meticulous.png" class="icon" alt=""></td>
+                        <td>
+                            <div class="content desc-project">
+                                Membangun sistem peringatan dini banjir menggunakan 3 sensor, yaitu sensor ultrasonik, sensor hujan, dan sensor tinggi air, serta 2 aktuator (buzzer dan LED) yang terintegrasi ke aplikasi Blynk.
+                            </div>
+
+                            <div class="show-more">
+                                <a>Show more</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 10px;"><img src="./assets/chain.png" class="icon" alt=""></td>
+                        <!-- <td style="padding-top: 10px;"><a target="_blank" style="color: aqua;" href="https://google.com">https://google.com</a></td> -->
+                    </tr>
+                </table>
+            </div>
+
+            <div class="child" id="project-detail">   
+                <table>
+                    <tr>
+                        <td><img src="./assets/folded-ribbon.png" class="icon" alt="Lokasi Magang"></td>
+                        <td style="width: 88%;"><h3>Sistem Informasi Literasi Digital "LiterasiKuy"</h3></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/ux.png" class="icon" alt="Lokasi Magang"></td>
+                        <td><b>Front End Developer</b></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/meticulous.png" class="icon" alt=""></td>
+                        <td>
+                            <div class="content desc-project">
+                                Teknologi yang digunakan dalam pengembangan Web : Figma, HTML, CSS, CSS Bootstrap and JavaScript.
+                            </div>
+
+                            <div class="show-more">
+                                <a>Show more</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 10px;"><img src="./assets/chain.png" class="icon" alt=""></td>
+                        <td style="padding-top: 10px;"><a target="_blank" style="color: aqua;" href="https://github.com/Sinagafrinaldo/UAS_PemrogramanWebLanjut">Tugas Kuliah - Sistem Informasi Literasi Digital "LiterasiKuy"</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </article>
+
+    <footer class="main-footer">
+        <div class="footer">
+            <div class="certificate-list">
+                <h3>Sertifikat</h3><br>
+                <ul>   
+                    <li style="margin-bottom: 8px;">&nbsp Front End Developer</li>
+                    <li style="margin-bottom: 8px;">&nbsp Network Engineer</li>
+                    <li >&nbsp UI Design</li>
+                </ul>
+            </div>
+    
+            <div class="assd">
+                <h3>Motivasi Hidup</h3><br>
+                <p>&nbsp "Jika Kau Lapar, Makanlah!!"</p>
+            </div>
+
+            <div class="medsos">
+                <h3>Media Sosial</h3><br>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/joy-ravelo/" target="_blank" rel="noopener noreferrer"><img src="./assets/linkedin.png" class="contact-icon" alt="Linkedin"></a>&nbsp</li>
+                    <li><a href="https://www.instagram.com/jravelo_trg/" target="_blank" rel="noopener noreferrer"><img src="./assets/instagram.png" class="contact-icon" alt="Instagram"></a>&nbsp</li>
+                    <li><a href="whatsapp://send?text=Hello&phone=+6281269837931" target="_blank" rel="noopener noreferrer"><img src="./assets/whatsapp.png" class="contact-icon" alt="Kontak"></a>&nbsp</li>
+                    <li><a href="mailto:joyravelo06@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./assets/email.png" class="contact-icon" alt="Email"></a>&nbsp</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            Joy Ravelo Tarigan
+        </div>
+
+        <button class="scrollToTopBtn">&#11165</button>
+    </footer>
+    
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        
+
+        var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+        var rootElement = document.documentElement;
+
+        function handleScroll() {
+            // Do something on scroll
+            var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+
+            if (rootElement.scrollTop / scrollTotal > 0.5) {
+                // Show button
+                scrollToTopBtn.classList.add("showBtn");
+            } else {
+                // Hide button
+                scrollToTopBtn.classList.remove("showBtn");
+            }
+        }
+
+        function scrollToTop() {
+            // Scroll to top logic
+            rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+        document.addEventListener("scroll", handleScroll);
+
+        $(".show-more a").on("click", function() {
+            var $this = $(this);
+            var $content = $this.parent().prev("div.content");
+            var linkText = $this.text().toUpperCase();
+
+            if (linkText === "SHOW MORE") {
+                linkText = "Show less";
+                $content.switchClass("desc-project", "showContent", 400);
+            } else {
+                linkText = "Show more";
+                $content.switchClass("showContent", "desc-project", 400);
+            };
+
+        $this.text(linkText);
+        });
+
+
+        $(".fe-btn").on('click', function() {
+            $(".custom-model-fe").addClass('model-open');
+        }); 
+
+        $(".close-btn, .bg-overlay").click(function(){
+            $(".custom-model-fe").removeClass('model-open');
+        });
+
+
+        $(".ne-btn").on('click', function() {
+            $(".custom-model-ne").addClass('model-open');
+        }); 
+
+        $(".close-btn, .bg-overlay").click(function(){
+            $(".custom-model-ne").removeClass('model-open');
+        });
+
+        
+        $(".ui-btn").on('click', function() {
+            $(".custom-model-ui").addClass('model-open');
+        }); 
+
+        $(".close-btn, .bg-overlay").click(function(){
+            $(".custom-model-ui").removeClass('model-open');
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,468 @@
+/* --- CSS Global --- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* a {
+    text-decoration:none;
+}
+
+
+/* --- CSS Navbar --- */
+.navbar {
+    background-color: #6aba82;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 2px #3f7c52;
+    overflow:hidden;
+    height: 70px;
+    transition: .5s;
+}
+
+.navbar a{
+    color:azure;
+}
+
+.navbar a.icon-bar{
+    display: none;
+}
+
+
+/* --- CSS Header --- */
+.header {
+    background-image: linear-gradient(to bottom right, #6aba82, #194b28);
+    width: 100%;
+}
+
+.profile {
+    padding: 90px;
+    display: flex;
+	flex-direction:row;
+}
+
+.profile .profile-image {
+    text-align: center;
+    margin: 20px;
+}
+
+.profile-image img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 25%;
+}
+
+.profile-data {
+    margin: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    color: azure;
+}
+
+.profile-contact {
+    margin-top: 35px;
+
+}
+
+.profile-contact ul li{
+    display: inline-block;
+}
+
+.contact-icon {
+    width: 35px;
+}
+
+.profile-about {
+    width: 40rem;
+}
+
+.profile-btn a > button {
+    padding: 10px;
+    border-radius: 6px;
+    width: 8rem;
+    background-color: #800000;
+    color: azure;
+    cursor: pointer;
+}
+
+
+/* --- CSS Articel/Main Content --- */
+.main-content {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.skills-list ul li {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-left:5rem;
+    margin-right:5rem;
+    width:230px;
+    box-shadow: 1px 1px 1px 1px;
+    background-image: linear-gradient(to bottom right, #6aba82, #194b28);
+    border-radius: 5px;
+    color: azure;
+}
+
+.skills-image {
+    max-width: 80%;
+    border-radius: 50%;
+}
+
+.fe-btn, .ne-btn, .ui-btn {
+    padding: 9px;
+    border-radius: 6px;
+    width: 80%;
+    background-color: #800000;
+    color: azure;
+}
+
+.custom-model-fe, .custom-model-ne, .custom-model-ui {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /* z-index: 1050; */
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear, z-index 0.15;
+    -o-transition: opacity 0.15s linear, z-index 0.15;
+    transition: opacity 0.15s linear, z-index 0.15;
+    z-index: -1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #050f08;
+}
+  
+.model-open {
+    z-index: 99999;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.custom-model-inner {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    display: inline-block;
+    vertical-align: middle;
+    width: 600px;
+    margin: 30px auto;
+    max-width: 97%;
+}
+
+.custom-model-wrap {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: 0;
+    text-align: left;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+}
+
+.model-open .custom-model-inner {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    position: relative;
+    z-index: 999;
+  }
+
+.model-open .bg-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+
+.bg-overlay {
+    background: rgba(0, 0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-transition: background 0.15s linear;
+    -o-transition: background 0.15s linear;
+    transition: background 0.15s linear;
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.experience {
+    background-image: linear-gradient(to bottom right, #6aba82, #194b28);
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.experience-detail {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    color: azure;
+    justify-content: center;
+}
+
+.experience-info {
+    background-image: url('./assets/annie-spratt-6a3nqQ1YwBw-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 50%;    
+    margin: 1.5rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 2px 2px #050f08;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.icon {
+    width: 30px;
+}
+
+.project {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: center;
+    /* box-shadow: 1px 1px 1px 1px; */
+}
+
+.child {
+    flex-basis: 26%;
+}
+
+#project-detail {
+    background-image: linear-gradient(to bottom right, #6aba82, #194b28);
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 18px;
+    border-radius: 15px;
+    text-align: left;
+    margin: 20px;
+    color: azure;
+}
+
+
+.desc-project {
+    height: 3em;
+    overflow: hidden;
+    line-height: 1em;
+}
+
+.showContent {
+    line-height: 1em;
+    height: auto;
+  }
+  
+.showContent {
+    height: auto;
+  }
+
+.show-more {
+    margin-top: 7px;
+    color: aqua;
+  }
+
+.show-more:hover {
+    cursor:pointer;
+}
+
+
+/* --- CSS Footer --- */
+.main-footer {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #6aba82, #194b28);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    
+}
+
+.footer {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    box-shadow: 0 0.5px azure;
+}
+
+.certificate-list, .assd, .medsos {
+    margin: 50px;
+}
+
+.certificate-list ul li{
+    display: block;
+}
+
+
+.medsos ul li {
+    display: inline-block;
+
+}
+
+.copyright {
+    text-align: center;
+    padding: 14px;
+}
+
+
+.scrollToTopBtn {
+    background-image: linear-gradient(to bottom right, #800000, #175f2d);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px;
+
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all 0.5s ease;
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+
+    /* --- CSS Navbar --- */
+    .navbar a:not(:first-child) {display: none;}
+
+    .navbar a.icon-bar{
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: sticky;
+        height: 135px;
+    }
+    .navbar.responsive a.icon-bar {
+        position: absolute;
+        right: 28px;
+        top: 28px;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .navbar.responsive a:nth-child(2), a:nth-child(3){
+        margin-top: 15px;
+      }
+
+
+    /* --- CSS Header --- */
+    .profile {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile-about {
+        width: 100%;
+        text-align: left;
+    }
+
+    /* --- CSS Articel/Main Content --- */
+    .skills-list ul li {       
+        margin-left:0;
+        margin-right:0; 
+    }
+
+
+    .experience-detail, .project-list, .footer {
+        display: flex;
+        flex-direction:column;
+    }
+
+
+    /* --- CSS Footer --- */
+    .certificate-list, .medsos {
+        margin: 50px;
+    }
+
+    .medsos, .assd {
+        margin-top: -15px;
+    }
+  }
+
+@media screen and (max-width:799px){
+    .custom-model-inner{margin-top: 45px;}
+}
+
+@media screen and (min-width:800px){
+    .custom-model-fe:before, .custom-model-ne:before, .custom-model-ui:before {
+        content: "";
+        display: inline-block;
+        height: auto;
+        vertical-align: middle;
+        margin-right: -0px;
+        height: 100%;
+    }
+}
+
+  
+  
+
+
