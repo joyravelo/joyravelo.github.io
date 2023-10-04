@@ -339,6 +339,9 @@ html {
     display: block;
 }
 
+.certificate-list ul a li{
+    color: azure;
+}
 
 .medsos ul li {
     display: inline-block;
@@ -396,8 +399,8 @@ html {
     }
     .navbar.responsive a.icon-bar {
         position: absolute;
-        right: 28px;
-        top: 28px;
+        right: 25px;
+        top: 25px;
     }
 
     .navbar.responsive a {

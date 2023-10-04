@@ -15,7 +15,7 @@
     <nav class="navbar" id="myNavbar">
         <div style="padding: 25px;">
         <a style="margin-right: 35px;" href="#">Joy Ravelo Tarigan</a>
-            <a style="margin-right: 20px;" href="#">Sertifikat</a>
+            <a style="margin-right: 20px;" href="#certificate">Sertifikat</a>
             <a href="#skills">Keterampilan</a>
             <a href="javascript:void(0);"  class="icon-bar" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
@@ -81,7 +81,7 @@
                                                 <li>HTML</li>
                                                 <li>CSS</li>
                                                 <li>CSS Bootstrap</li>
-                                                <li>JavaSvript</li>
+                                                <li>JavaScript</li>
                                                 <li>React Js</li>
                                                 <li>React Native</li>
                                             </ul>
@@ -119,6 +119,7 @@
                                                 <li>IP Address & Subnetting</li>
                                                 <li>Switching & Routing</li>
                                                 <li>Protokol TCP/IP</li>
+                                                <li>Firewall</li>
                                                 <li>Software Define Network</li>
                                             </ul>
                                         </center>
@@ -350,11 +351,11 @@
 
     <footer class="main-footer">
         <div class="footer">
-            <div class="certificate-list">
+            <div id="certificate" class="certificate-list">
                 <h3>Sertifikat</h3><br>
                 <ul>   
-                    <li style="margin-bottom: 8px;">&nbsp Front End Developer</li>
-                    <li style="margin-bottom: 8px;">&nbsp Network Engineer</li>
+                    <a href="sertifikat-front-end.html"><li style="margin-bottom: 8px;">&nbsp Front End Developer</li></a>
+                    <a href="sertifikat-jaringan-komputer.html"><li style="margin-bottom: 8px;">&nbsp Network Engineer</li></a>
                     <li >&nbsp UI Design</li>
                 </ul>
             </div>
@@ -381,88 +382,8 @@
 
         <button class="scrollToTopBtn">&#11165</button>
     </footer>
+
+    <script src="myscript.js"></script>
     
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myNavbar");
-            if (x.className === "navbar") {
-                x.className += " responsive";
-            } else {
-                x.className = "navbar";
-            }
-        }
-        
-
-        var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
-        var rootElement = document.documentElement;
-
-        function handleScroll() {
-            // Do something on scroll
-            var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-
-            if (rootElement.scrollTop / scrollTotal > 0.5) {
-                // Show button
-                scrollToTopBtn.classList.add("showBtn");
-            } else {
-                // Hide button
-                scrollToTopBtn.classList.remove("showBtn");
-            }
-        }
-
-        function scrollToTop() {
-            // Scroll to top logic
-            rootElement.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        }
-        scrollToTopBtn.addEventListener("click", scrollToTop);
-        document.addEventListener("scroll", handleScroll);
-
-        $(".show-more a").on("click", function() {
-            var $this = $(this);
-            var $content = $this.parent().prev("div.content");
-            var linkText = $this.text().toUpperCase();
-
-            if (linkText === "SHOW MORE") {
-                linkText = "Show less";
-                $content.switchClass("desc-project", "showContent", 400);
-            } else {
-                linkText = "Show more";
-                $content.switchClass("showContent", "desc-project", 400);
-            };
-
-        $this.text(linkText);
-        });
-
-
-        $(".fe-btn").on('click', function() {
-            $(".custom-model-fe").addClass('model-open');
-        }); 
-
-        $(".close-btn, .bg-overlay").click(function(){
-            $(".custom-model-fe").removeClass('model-open');
-        });
-
-
-        $(".ne-btn").on('click', function() {
-            $(".custom-model-ne").addClass('model-open');
-        }); 
-
-        $(".close-btn, .bg-overlay").click(function(){
-            $(".custom-model-ne").removeClass('model-open');
-        });
-
-        
-        $(".ui-btn").on('click', function() {
-            $(".custom-model-ui").addClass('model-open');
-        }); 
-
-        $(".close-btn, .bg-overlay").click(function(){
-            $(".custom-model-ui").removeClass('model-open');
-        });
-
-    </script>
 </body>
 </html>
